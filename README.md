@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/manifest-v3-green" alt="Manifest V3">
 </p>
 
-## 🌟 Overview
+## Overview
 
 **Pureview** is a lightweight Chrome extension designed to give users a cleaner and distraction-free web browsing experience by blocking intrusive advertisements. Whether you're working, studying, or just casually browsing, Pureview helps you stay focused and efficient.
 Inspired by uBlock Origin which is no longer available on chrome web store.
