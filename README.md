@@ -1,7 +1,5 @@
-# PureView Ad Blocker
-
 <p align="center">
-  <img src="icons/icon128.png" width="100" alt="Pureview Logo" />
+  <img src="icons/icon128.png" width="100" alt="PureView Logo" />
 </p>
 
 <h1 align="center">Pureview - Adblocker Chrome Extension</h1>
@@ -13,7 +11,8 @@
 
 ## 🌟 Overview
 
-**Pureview** is a lightweight Chrome extension designed to give users a cleaner and distraction-free web browsing experience by blocking intrusive advertisements. Whether you're working, studying, or just casually browsing, Pureview helps you stay focused and efficient. Inspired by uBlock Origin which is no longer available on chrome web store.
+**Pureview** is a lightweight Chrome extension designed to give users a cleaner and distraction-free web browsing experience by blocking intrusive advertisements. Whether you're working, studying, or just casually browsing, Pureview helps you stay focused and efficient.
+Inspired by uBlock Origin which is no longer available on chrome web store.
 
 ## Features
 
