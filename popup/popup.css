@@ -1,0 +1,84 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a23;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.power-button {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#adblock-toggle {
+  display: none;
+}
+
+.power-icon {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: #888;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.power-icon:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+#adblock-toggle:checked + .power-icon {
+  background-color: #4285f4;
+}
+
+#adblock-toggle:checked + .power-icon:after {
+  transform: translateX(20px);
+}
+
+.stats-container {
+  width: 100%;
+  text-align: center;
+}
+
+.stat-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.stat-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.stat-label {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureView</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="power-button">
+        <input type="checkbox" id="adblock-toggle" checked />
+        <label for="adblock-toggle" class="power-icon"></label>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <p class="stat-label">Blocked on this page</p>
+          <p class="stat-value">
+            <span id="current-page-count">0</span>
+          </p>
+        </div>
+
+        <div class="stat-item">
+          <p class="stat-label">Blocked since install</p>
+          <p class="stat-value">
+            <span id="total-count">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
