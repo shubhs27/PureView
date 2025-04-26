@@ -2,12 +2,12 @@ let enabled = true;
 let pageBlockedCount = 0;
 
 const AD_SELECTORS = [
-  // Google specific ad selectors
+  // Google specific
   "ins.adsbygoogle",
   'div[id^="google_ads_iframe_"]',
   'div[id^="div-gpt-ad-"]',
 
-  // Common ad containers with more specific targeting
+  // Common ad containers
   'div[class^="ad-container-"]',
   'div[class^="ad-wrapper-"]',
   'div[class^="ad-slot-"]',
@@ -49,7 +49,7 @@ function checkEnabledState() {
 function detectAndBlockAds() {
   if (!enabled) return;
 
-  // Create a mutation observer to detect dynamically added ads
+  // Mutation observer to detect dynamically added ads
   const observer = new MutationObserver((mutations) => {
     if (!enabled) return;
 
@@ -68,12 +68,11 @@ function detectAndBlockAds() {
 
   // Start observing
   observer.observe(document.body, {
-    childList: true,
-    subtree: true,
+    childList: true, // Watches for direct child elements added/removed
+    subtree: true, // Watches for changes throughout the entire DOM tree
   });
 
-  // Initial check for ads
-  checkForAds();
+  checkForAds(); // Initial check
 }
 
 function checkForAds() {
@@ -120,4 +119,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
-checkEnabledState();
+checkEnabledState(); // Starts the ad blocking process when content script loads

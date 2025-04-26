@@ -32,9 +32,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     });
   } else if (message.action === "getState") {
     chrome.storage.local.get(["enabled"], (result) => {
-      sendResponse({ enabled: result.enabled !== false });
+      sendResponse({ enabled: result.enabled !== false }); // Returns true if result.enabled is true or undefined
     });
-    return true; // Required for async response
+    return true; // Required for async response. Without this, Chrome would not wait for the sendResponse call that happens
   }
 });
 
